@@ -1,0 +1,98 @@
+@import '../../../styles/sass/variables';
+
+.Button {
+	min-width: 160px;
+	height: 48px;
+	font-size: 1.6rem;
+	font-weight: 600;
+	outline: none;
+	border: none;
+	background-color: $color-dark-red-400;
+	color: $color-white-100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	user-select: none;
+	border-radius: 9rem;
+	padding: 1rem 2rem;
+
+	/*-----------disabled state-------------*/
+
+	&--DisabledPrimary {
+		color: $color-dark-red-300 !important;
+		background-color: $color-dark-red-200 !important;
+		border: none !important;
+	}
+	&--DisabledSecondary {
+		color: $color-grey-600 !important;
+		background-color: $color-grey-200 !important;
+		border: none !important;
+	}
+
+	&--DisabledLink {
+		color: $color-grey-600 !important;
+	}
+
+	/*-----------loading state-------------*/
+
+	&--Loader {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+
+		svg {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+	}
+
+	/*-----------with icon-------------*/
+
+	&--Icon {
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+
+		svg,
+		img {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	&--Suffix {
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+
+		svg,
+		img {
+			width: 14px;
+			height: 14px;
+		}
+	}
+
+	/*--------- variants ---------*/
+
+	&--Primary {
+		background-color: $color-dark-red-400;
+		color: $color-white-100;
+	}
+
+	&--Secondary {
+		border: 1px solid $color-grey-400;
+		color: $color-grey-600;
+		background-color: $color-white-100;
+	}
+	&--Link {
+		font-weight: 600;
+		min-width: fit-content;
+		padding: 0;
+		color: $color-dark-red-400;
+		background-color: inherit;
+	}
+}

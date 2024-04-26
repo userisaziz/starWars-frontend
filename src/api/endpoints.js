@@ -1,2 +1,2 @@
-/*------------- login --------------*/
-export const USER_LOGIN = '/api/v1/admin/login';
+/*------------- Planets --------------*/
+export const GET_ALL_PLANETS = 'api/planets/?format=json';
