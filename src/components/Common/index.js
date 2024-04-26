@@ -1,4 +1,5 @@
-import { Button } from '..';
+import Button from './Button/Button';
+import { Card } from './Card/Card';
 import Loader from './Loader/Loader';
 
-export { Loader, Button };
+export { Loader, Card, Button };

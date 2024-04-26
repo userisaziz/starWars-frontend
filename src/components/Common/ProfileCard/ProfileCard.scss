@@ -1,0 +1,41 @@
+.card {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+	transition: transform 0.3s ease;
+	max-width: 300px;
+}
+
+.profileImage {
+	flex: 0 0 60px; /* Adjust as needed */
+	margin-right: 20px;
+}
+
+.textContainer {
+	flex-grow: 1;
+}
+
+.name {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.profile {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #ffd854;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 25px;
+}
+
+.profile:hover {
+	background-color: #fbc02d;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}

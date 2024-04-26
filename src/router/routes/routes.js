@@ -3,12 +3,13 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import { pathname } from '../pathname';
 import HomePage from '../../views/afterAuth/HomePage/HomePage';
+import { ErrorBoundary } from '../../components';
 
 const router = createBrowserRouter([
 	{
 		path: pathname.HOME,
 		element: <HomePage />,
-		// errorElement: <ErrorBoundary />,
+		errorElement: <ErrorBoundary />,
 		children: [
 			{
 				index: true,

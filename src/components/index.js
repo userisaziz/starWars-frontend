@@ -1,4 +1,4 @@
-import { Button, Loader } from './Common';
+import { Loader, Card } from './Common';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 
-export { Button, Loader, ErrorBoundary };
+export { Loader, ErrorBoundary, Card };

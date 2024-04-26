@@ -1,8 +1,7 @@
 import React from 'react';
 import './Button.scss';
 import { ArrowRight, PreLoader } from '../../../assets/icon';
-import { capitalizeFirstLetter } from '../../../utils';
-
+import capitalizeFirstLetter from '../../../utils/CapitalizeFirstLetter/CapitalizeFirstLetter';
 const Button = (props) => {
 	const {
 		children,

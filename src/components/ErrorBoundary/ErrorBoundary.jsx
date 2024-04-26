@@ -19,13 +19,13 @@ const ErrorBoundary = () => {
 		return (
 			<React.Fragment>
 				{/* <img src={Error} alt="error" className="ErrorBoundary--Image" /> */}
-				<Typography variant="h1" align="center" size="4rem">
+				<h1 variant="h1" align="center" size="4rem">
 					<span>{error.status}: </span>
 					{error.statusText} !
-				</Typography>
-				<Typography variant="h1" align="center" color="#FA0707">
+				</h1>
+				<h1 variant="h1" align="center" color="#FA0707">
 					{error.error.message}
-				</Typography>
+				</h1>
 			</React.Fragment>
 		);
 	};
@@ -34,16 +34,16 @@ const ErrorBoundary = () => {
 		return (
 			<React.Fragment>
 				{/* <img src={Error} alt="error" className="ErrorBoundary--Image" /> */}
-				<Typography variant="h1" align="center" size="4rem">
+				<h1 variant="h1" align="center" size="4rem">
 					Something went wrong !
-				</Typography>
+				</h1>
 				<Button variant="primary" type="button" onClick={handleReload} isLoading={isLoading}>
 					Reload
 				</Button>
 
-				<Typography variant="h1" align="center" color="#FA0707">
+				<h1 variant="h1" align="center" color="#FA0707">
 					{error.message}
-				</Typography>
+				</h1>
 			</React.Fragment>
 		);
 	};

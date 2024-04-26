@@ -11,7 +11,7 @@ import { localStorageKey } from '../Keys';
 // const resetErrorAction = () => DispatchErrorAction(false, '', null, {});
 
 export const axiosInstance = Axios.create({
-	baseURL: process.env.baseURL,
+	baseURL: process.env.baseUrl,
 });
 
 axiosInstance.interceptors.request.use(
