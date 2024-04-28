@@ -16,7 +16,7 @@ const PreLoader = (props) => {
 				cx="50"
 				cy="50"
 				fill="none"
-				stroke="#FF6B6B"
+				stroke="#759DE6"
 				strokeWidth={strokeWidth}
 				r="26"
 				strokeDasharray="122.52211349000194 42.840704496667314"

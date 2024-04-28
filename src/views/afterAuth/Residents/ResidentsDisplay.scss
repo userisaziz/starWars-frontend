@@ -1,4 +1,4 @@
-.HomePage {
+.ResidentsDisplay {
 	&--HeaderTitle {
 		color: black;
 		font-size: 3rem;
@@ -9,6 +9,7 @@
 		display: flex;
 		gap: 16px;
 		flex-wrap: wrap;
+		padding: 40px;
 	}
 	&--Header {
 		display: flex;

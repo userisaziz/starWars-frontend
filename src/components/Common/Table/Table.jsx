@@ -2,7 +2,6 @@ import React, { useMemo, useRef, useEffect, useState, useCallback } from 'react'
 import { AgGridReact } from 'ag-grid-react';
 
 import Pagination from '../Pagination/Pagination';
-import { paginationLimit } from '../../../constant';
 
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
@@ -117,7 +116,7 @@ const Table = (props) => {
 					columnDefs={header}
 					defaultColDef={defaultColDef}
 					onGridReady={handleGridReady}
-					paginationPageSize={paginationLimit}
+					paginationPageSize={10}
 					rowHeight={56}
 					pagination={true}
 					unSortIcon={true}

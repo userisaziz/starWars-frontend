@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { useGetAllPlanets, setTitle } from './actionCreator';
+import { useGetAllPlanets, fetchResidentsByPlanet, setTitle } from './actionCreator';
 
 export const homeSlice = createSlice({
 	name: 'home',
@@ -7,6 +7,7 @@ export const homeSlice = createSlice({
 		loading: false,
 		isError: false,
 		allPlanetDetails: [],
+		allResidents: [],
 	},
 	reducers: {
 		setHomeSlice: setTitle,
@@ -16,6 +17,7 @@ export const homeSlice = createSlice({
 			.addCase(useGetAllPlanets.pending, (state) => {
 				state.isError = false;
 				state.loading = true;
+				state.allPlanetDetails = [];
 			})
 			.addCase(useGetAllPlanets.fulfilled, (state, action) => {
 				state.isError = false;
@@ -25,6 +27,20 @@ export const homeSlice = createSlice({
 			.addCase(useGetAllPlanets.rejected, (state) => {
 				state.isError = true;
 				state.loading = false;
+			})
+			.addCase(fetchResidentsByPlanet.pending, (state) => {
+				state.loading = true;
+				state.isError = false;
+				state.allResidents = [];
+			})
+			.addCase(fetchResidentsByPlanet.fulfilled, (state, action) => {
+				state.loading = false;
+				state.isError = false;
+				state.allResidents = action.payload;
+			})
+			.addCase(fetchResidentsByPlanet.rejected, (state) => {
+				state.loading = false;
+				state.isError = true;
 			}),
 });
 
